@@ -32,13 +32,11 @@ so the only available numbers are:<br>
 - `192`
 - `128`
 - `0`
-<br>
-Through which
- `255.255.128.0`
- would be a valid mask<br>
-and
- `255.255.128.128`
- would not be a valid mask.<br>
+
+
+
+Through which `255.255.255.0` would be a valid mask<br>
+and `255.255.128.128` would *not* be a valid mask.<br>
 <br>
 In order to have the ability to send packages between two IP-addresses they either need to be part of the same subnet or they need to be connected by a router which is part of both subnets.
 

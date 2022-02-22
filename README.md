@@ -126,7 +126,7 @@ If routers and switches are still magic to you, i suggest looking deeper [into i
 
 [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
-![example_router](https://github.com/tblaase/readme_additions/router_example.png)
+![example_router](https://github.com/tblaase/Net_Practice/blob/main/readme_additions/router_example.png)
 
 ## Routing Table
 The routing table is there to store all the different paths to all the networks, the device is part of.<br>

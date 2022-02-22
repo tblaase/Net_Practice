@@ -141,6 +141,8 @@ The **next hop** is the address of the next router that you need to send the pac
 
 Here are all the solutions and explanations to all 10 Levels.<br>
 
+---
+
 ### Level 1
 
 <details>
@@ -156,6 +158,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
+
+---
 
 ### Level 2
 
@@ -177,6 +181,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
 </details>
 
+---
+
 ### Level 3
 
 <details>
@@ -191,6 +197,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
+
+---
 
 ### Level 4
 
@@ -208,6 +216,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
+
+---
 
 ### Level 5
 
@@ -228,6 +238,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
+
+---
 
 ### Level 6
 
@@ -260,6 +272,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
 </details>
 
+---
+
 ### Level 7
 
 <details>
@@ -283,6 +297,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
+
+---
 
 ### Level 8
 
@@ -326,6 +342,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
+
+---
 
 ### Level 9
 
@@ -411,6 +429,8 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
 [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
 </details>
+
+---
 
 ### Level 10
 

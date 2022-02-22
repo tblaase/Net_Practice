@@ -82,7 +82,7 @@ To help you understanding it, i found this table very helpfull:
 | CIDR | Dot-decimal | Number of IP-addresses<br /> per subnet | Usable IP-addresses <br /> per subnet | Number of subnets |
 | :---: | :-----------: | :---: | :---: | :---: |
 | /32 | 255.255.255.255 | 1 | 0 | 256 |
-| /31 | 255.255.255.254 | 2 | 1 | 128 |
+| /31 | 255.255.255.254 | 2 | 0 | 128 |
 | /30 | 255.255.255.252 | 4 | 2 | 64 |
 | /29 | 255.255.255.248 | 8 | 6 | 32 |
 | /28 | 255.255.255.240 | 16 | 14 | 16 |
@@ -128,66 +128,108 @@ The **next hop** is the address of the next router that you need to send the pac
 
 ## Levels
 
-Here are all the solutions to all 10 Levels, with short explanations.<br>
+Here are all the solutions and explanations to all 10 Levels.<br>
+
+---
+
 <details>
   <summary>Level 1</summary>
-  
+
   ![Level 1](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_1.png)<br>
-  
+  Here we have two separate networks, each consisting of two computers.<br>
+  In order to make it work, the two computers need to be part of the same network.<br>
+  Because the mask of A and B is `255.255.255.0` the possible IP-adresses of A1 are `104.99.23.1 - 104.99.23.254`.<br>
+  For C and D the mask is `255.255.0.0`, so the usable IP's are `211.191.0.1 - 211.191.255.254`<br>
+
 </details>
+
+---
+
 <details>
   <summary>Level 2</summary>
-  
+
   ![Level 2](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_2.png)<br>
-  
+Here we have two separate networks again, but this time we need to set the mask and IP correctly.<br>
+For the network of A and B, they need the same mask, `255.255.255.224`.<br>
+The available IP-addresses for A1 are `192.168.57.193 - 192.168.57.221`.<br>
+
+
+Network C and D already has the same mask. so they just need addresses that are part of the same subnet.<br>
+In the case of the mask beeing `/30` the subnet only consists of 2 available addresses per subnet. So be carefull, to choose the correct ones. to make things easier, i suggest you either start with the lowest or highest subnet.<br>
+I choose the highest, so my available IP-range is `192.168.57.253 - 192.168.57.254`<br>
+
 </details>
+
+---
+
 <details>
   <summary>Level 3</summary>
-  
+
   ![Level 3](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_3.png)<br>
-  
+
 </details>
+
+---
+
 <details>
   <summary>Level 4</summary>
-  
+
   ![Level 4](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_4.png)<br>
-  
+
 </details>
+
+---
+
 <details>
   <summary>Level 5</summary>
-  
+
   ![Level 5](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_5.png)<br>
-  
+
 </details>
+
+---
+
 <details>
   <summary>Level 6</summary>
-  
+
   ![Level 6](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_6.png)<br>
-  
+
 </details>
+
+---
+
 <details>
   <summary>Level 7</summary>
-  
+
   ![Level 7](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_7.png)<br>
-  
+
 </details>
+
+---
+
 <details>
   <summary>Level 8</summary>
-  
+
   ![Level 8](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_8.png)<br>
-  
+
 </details>
+
+---
+
 <details>
   <summary>Level 9</summary>
-  
+
   ![Level 9](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_9.png)<br>
-  
+
 </details>
+
+---
+
 <details>
   <summary>Level 10</summary>
-  
+
   ![Level 10](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_10.png)<br>
-  
+
 </details>
 
 

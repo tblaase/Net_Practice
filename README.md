@@ -131,43 +131,43 @@ The **next hop** is the address of the next router that you need to send the pac
 Here are all the solutions to all 10 Levels, with short explanations.<br>
 <details>
   <summary>Level 1</summary>
-  ![Level 1](https://github.com/tblaase/my_solutions/Level_1.png)<br>
+  ![Level 1](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_1.png)<br>
 </details>
 <details>
   <summary>Level 2</summary>
-  ![Level 2](https://github.com/tblaase/my_solutions/Level_2.png)<br>
+  ![Level 2](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_2.png)<br>
 </details>
 <details>
   <summary>Level 3</summary>
-  ![Level 3](https://github.com/tblaase/my_solutions/Level_3.png)<br>
+  ![Level 3](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_3.png)<br>
 </details>
 <details>
   <summary>Level 4</summary>
-  ![Level 4](https://github.com/tblaase/my_solutions/Level_4.png)<br>
+  ![Level 4](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_4.png)<br>
 </details>
 <details>
   <summary>Level 5</summary>
-  ![Level 5](https://github.com/tblaase/my_solutions/Level_5.png)<br>
+  ![Level 5](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_5.png)<br>
 </details>
 <details>
   <summary>Level 6</summary>
-  ![Level 6](https://github.com/tblaase/my_solutions/Level_6.png)<br>
+  ![Level 6](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_6.png)<br>
 </details>
 <details>
   <summary>Level 7</summary>
-  ![Level 7](https://github.com/tblaase/my_solutions/Level_7.png)<br>
+  ![Level 7](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_7.png)<br>
 </details>
 <details>
   <summary>Level 8</summary>
-  ![Level 8](https://github.com/tblaase/my_solutions/Level_8.png)<br>
+  ![Level 8](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_8.png)<br>
 </details>
 <details>
   <summary>Level 9</summary>
-  ![Level 9](https://github.com/tblaase/my_solutions/Level_9.png)<br>
+  ![Level 9](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_9.png)<br>
 </details>
 <details>
   <summary>Level 10</summary>
-  ![Level 10](https://github.com/tblaase/my_solutions/Level_10.png)<br>
+  ![Level 10](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_10.png)<br>
 </details>
 
 

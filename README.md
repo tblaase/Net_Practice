@@ -126,9 +126,12 @@ If routers and switches are still magic to you, i suggest looking deeper [into i
 
 [back to contents](https://github.com/tblaase/Net_Practice#contents)
 
+## Routing Table
+
+
 ![example_router](https://github.com/tblaase/Net_Practice/blob/main/readme_additions/router_example.png)
 
-## Routing Table
+
 The routing table is there to store all the different paths to all the networks, the device is part of.<br>
 In Net_Practice the routing table consists of two elements, the **destination** and the **next hop**<br>
 The **destination** consists of the network-address that you want to send a package to, combined with the CIDR of that network: `190.3.2.252/30`. If you don't want to specify a destination, you can just set it to `default` or `0.0.0.0/0`.<br>

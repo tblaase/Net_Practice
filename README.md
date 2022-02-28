@@ -16,7 +16,7 @@ And all other tutorials i found used these flaws to simplify the solution.<br>
   - [Switches](https://github.com/tblaase/Net_Practice#switches)
   - [Routers](https://github.com/tblaase/Net_Practice#routers)
   - [Routing Tables](https://github.com/tblaase/Net_Practice#routing-tables)
-  - [Network] (https://github.com/tblaase/Net_Practice#network)
+  - [Network](https://github.com/tblaase/Net_Practice#network)
 - [Levels](https://github.com/tblaase/Net_Practice#levels)
   - [Level 1](https://github.com/tblaase/Net_Practice#level-1)
   - [Level 2](https://github.com/tblaase/Net_Practice#level-2)

@@ -16,6 +16,7 @@ And all other tutorials i found used these flaws to simplify the solution.<br>
   - [Switches](https://github.com/tblaase/Net_Practice#switches)
   - [Routers](https://github.com/tblaase/Net_Practice#routers)
   - [Routing Tables](https://github.com/tblaase/Net_Practice#routing-tables)
+  - [Network] (https://github.com/tblaase/Net_Practice#network)
 - [Levels](https://github.com/tblaase/Net_Practice#levels)
   - [Level 1](https://github.com/tblaase/Net_Practice#level-1)
   - [Level 2](https://github.com/tblaase/Net_Practice#level-2)
@@ -136,6 +137,29 @@ The routing table is there to store all the different paths to all the networks,
 In Net_Practice the routing table consists of two elements, the **destination** and the **next hop**<br>
 The **destination** consists of the network-address that you want to send a package to, combined with the CIDR of that network: `190.3.2.252/30`. If you don't want to specify a destination, you can just set it to `default` or `0.0.0.0/0`.<br>
 The **next hop** is the address of the next router that you need to send the packages to in order to reach the destination-network.<br>
+
+
+[back to contents](https://github.com/tblaase/Net_Practice#contents)
+
+## Network
+
+And now to connect all of the above mentioned topics.<br>
+In order to have a functioning network, you now need to apply all of the parts talked about earlier.<br>
+If there should be a working connection in a network, the devices somehow need to be connected, either directly or by the help of routers which are part of both networks.
+
+
+Now you may ask, how do i know if two devices are part of the same network?<br>
+For this you need to combine the IP-address and the mask of the devices in order to get the network-adress, that device is part of.<br>
+By combining i mean, doing a bit-by-bit-AND-opperation.<br>
+For that we first need to translate the IP and the mask to binary.<br>
+i.e.:<br>
+IP: `192.168.100.1` in binary: `11000000.10101000.1100100.00000001`<br>
+MASK: `255.255.255.0` in binary: `11111111.11111111.11111111.00000000`<br>
+Now you just combine the two bit by bit, if both bits are a `1` the corresponding bit of the network-address is `1`, in any other case the corresponding bit is `0`.
+
+
+By doing that to the mentioned example, you should get the network-address of `11000000.10101000.1100100.00000000` or `192.168.100.0` in dot-decimal.<br>
+If two devices share the same network-address, they are part of the same network and communication is enshured.
 
 
 [back to contents](https://github.com/tblaase/Net_Practice#contents)

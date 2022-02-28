@@ -158,7 +158,7 @@ MASK: `255.255.255.0` in binary: `11111111.11111111.11111111.00000000`<br>
 Now you just combine the two bit by bit, if both bits are a `1` the corresponding bit of the network-address is `1`, in any other case the corresponding bit is `0`.
 
 
-By doing that to the mentioned example, you should get the network-address of `11000000.10101000.1100100.00000000` or `192.168.100.0` in dot-decimal.<br>
+By doing that to the mentioned example, you should get the network-address of<br>`11000000.10101000.1100100.00000000` in binary or `192.168.100.0` in dot-decimal.<br>
 If two devices share the same network-address, they are part of the same network and communication is enshured.
 
 

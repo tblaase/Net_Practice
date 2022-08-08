@@ -438,9 +438,9 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   Since the mask of that network is fixed as well, set it accordingly.
 
 
-  Now, if we didn't forget anything, all that should be left, is to fix the routing table of R1.<br>
-  For this you need the network-address of the R23-D1 network.<br>
-  You can find this with the same logic, as before by just extending the [table](https://github.com/tblaase/Net_Practice#masks) above.<br>
+  Now, we need  to fix the routing table of R1, and the routing table of the internet.<br>
+  First for the routing table of R1, you need the network-address of the R23-D1 network.<br>
+  You can find this with the same logic as before by just extending the [table](https://github.com/tblaase/Net_Practice#masks) above.<br>
   With this you will be able to find out that the mask `/18` divides our IP-range into 4 subnets:
 
 
@@ -451,6 +451,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
 
 Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address is `63.239.64.0`, combine this with our mask of `/18` and you have the missing **destinaton** of our routing table, `63.239.64.0/18`.
+
+Fixing the routing table of the Internet: Only 2 fields of the routing table are actually needed, since only meson and cation need to connect to the internet. The route of the first we will match to subnet of Interface R11 with the subnet 121.198.129.X where the mask used is 255.255.255.128 in respective CIDR notation /25 to give 121.198.129.0/25. Similarly, the second table should match the Interface R22, with mask of 255.255.255.252 CIDR notation of /30 which gives 9.0.0.252/30
 
 
 [back to contents](https://github.com/tblaase/Net_Practice#contents)

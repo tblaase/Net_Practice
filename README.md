@@ -42,15 +42,15 @@ Special to the mask is, after one bit was `0` there can't be any `1` bit's anymo
 so the only available numbers are:
 
 
-- `255`
-- `254`
-- `252`
-- `248`
-- `240`
-- `224`
-- `192`
-- `128`
-- `0`
+- `255 (binary: 11111111)`
+- `254 (binary: 11111110)`
+- `252 (binary: 11111100)`
+- `248 (binary: 11111000)`
+- `240 (binary: 11110000)`
+- `224 (binary: 11100000)`
+- `192 (binary: 11000000)`
+- `128 (binary: 10000000)`
+- `0 (binary: 00000000)`
 
 
 Through which `255.255.255.0` is a valid mask<br>

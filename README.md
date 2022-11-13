@@ -159,7 +159,7 @@ Now you just combine the two bit by bit, if both bits are a `1` the correspondin
 
 
 By doing that to the mentioned example, you should get the network-address of<br>`11000000.10101000.1100100.00000000` in binary or `192.168.100.0` in dot-decimal.<br>
-If two devices share the same network-address, they are part of the same network and communication is enshured.
+If two devices share the same network-address, they are part of the same network and communication is ensured.
 
 
 [back to contents](https://github.com/tblaase/Net_Practice#contents)

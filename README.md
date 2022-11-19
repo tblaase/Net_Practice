@@ -318,7 +318,7 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
   - A1 R11 (network range of `107.198.14.0 - 107.198.14.3`)
   - R12 R21 (network range of `107.198.14.252 - 107.198.14.255`)
-  - R22 C1 (i did choose a network range of `107.198.14.4 - 107.198.14.7`)
+  - R22 C1 (I did choose a network range of `107.198.14.4 - 107.198.14.7`)
 
 
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
@@ -337,8 +337,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
 
   First thing we can solve is the connection of R13 and R21.<br>
-  The routing table of R2 gives you the fixed IP of R13 as `141.195.172.62` and as this network only consists of 2 needed IP-addresses we can set the mask of R13 and R21 to `255.255.255.252` in order to make business with overlapping IP-addresses easier.<br>
-  This will then result in `141.195.172.61` as the address of R21.<br>
+  The routing table of R2 gives you the fixed IP of R13 as `141.195.172.62` and as this network only consists of 2 needed IP-addresses we can set the mask of R13 and R21 to `255.255.255.252` in order to make things easier with overlapping IP-addresses.<br>
+  Then this will result in `141.195.172.61` as the address of R21.<br>
 
 
   In R12 we see the fixed IP, which is `163.166.250.12`, so this needs to be put into the routing table of the Internet.<br>
@@ -346,12 +346,12 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
   Now to set up the connection of D1 and R23.<br>
   First, set the mask of R23, since the mask of D1 is fixed to `255.255.255.240`.<br>
-  Then put in 2 IP-addresses which are part of the same network intoR23 and D1, i decided to use the lowest subnet of the mask, since it is a not used IP-range yet, which is `141.195.172.1 - 141.195.172.14`.<br>
+  Then put in 2 IP-addresses which are part of the same network intoR23 and D1, I decided to use the lowest subnet of the mask, since it is a not used IP-range yet, which is `141.195.172.1 - 141.195.172.14`.<br>
   So IP of R23 will be `141.195.172.1` and of D1 will be `141.195.172.2`.<br>
 
 
-  For the network between R22 and C1 we are free to choose any mask we want. In order to make it as easy as possible i set it to `255.255.255.252`, because i only need 2 usable IP-addresses. After that i then choose a free range for my IP's.<br>
-  In this case i did chose the next free one after the network of R23 and D1, which will be `141.195.172.17 - 141.195.172.18`.<br>
+  For the network between R22 and C1 we are free to choose any mask we want. In order to make it as easy as possible I set it to `255.255.255.252`, because I only need 2 usable IP-addresses. After that I then choose a free range for my IP's.<br>
+  In this case I did chose the next free one after the network of R23 and D1, which will be `141.195.172.17 - 141.195.172.18`.<br>
 
 
   Last thing to do is to set all the routing tables accordingly.<br>

@@ -383,12 +383,12 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
 
   First we set the ,mask of R22 and C1 to `255.255.255.252`, in order to block as little IP's as possible.<br>
-  Now you have to decide on which IP-range to use for this network. I decided for the top-end, with the usable IP-addresses beeing `10.0.0.253` and `10.0.0.0.254`.<br>
+  Now you have to decide on which IP-range to use for this network. I decided for the top-end, with the usable IP-addresses beeing `10.0.0.253` and `10.0.0.254`.<br>
   Now set the **next hop** in the routing table of C to the IP of R22.<br>
   Now change the routing table of R1, R2 and the Internet to make it work, as you learned before.
 
 
-  If you now hiy the `check again` button, it will show you `Goal 6 : cation need to communicate with Internet - Status : KO - No reverse way, try again ...` for this demonstration we will just ignore all of the other goals.<br>
+  If you now hit the `check again` button, it will show you `Goal 6 : cation need to communicate with Internet - Status : KO - No reverse way, try again ...` for this demonstration we will just ignore all of the other goals.<br>
   Now you can see at the small red box at the bottom right corner:
 
   ```

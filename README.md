@@ -1,13 +1,13 @@
 # Net_Practice
-[My solution](https://github.com/tblaase/Net_Practice/my_solutions) and basic explanantion on Net_Practice and networking basics.<br>
+[My solution](https://github.com/tblaase/Net_Practice/my_solutions) and basic explanation on Net_Practice and networking basics.<br>
 
 First of all, thanks to [Robin | radelwar](https://github.com/Radel-24) for explaining the more in depth stuff to me.<br>
-This may not be perfect since i just learned about all of the following myself.<br>
+This may not be perfect since I just learned about all of the following myself.<br>
 So please, if there is anything wrong or missing, please notify me by reaching out to me ([my profile](https://github.com/tblaase)) or create an [issue](https://github.com/tblaase/Net_Practice/issues/new), thanks.<br>
 
 
-I only created this tutorial, since the project has a few flaws and you have the ability to solve it in a way thats wrong, but the project is still telling you that everything is correct.<br>
-And all other tutorials i found used these flaws to simplify the solution.<br>
+I only created this tutorial, since the project has a few flaws and you have the ability to solve it in a way that's wrong, but the project is still telling you that everything is correct.<br>
+And all other tutorials I found used these flaws to simplify the solution.<br>
 
 ## Contents
 - [Basics](https://github.com/tblaase/Net_Practice#basics)
@@ -31,7 +31,7 @@ And all other tutorials i found used these flaws to simplify the solution.<br>
 
 
 ## Basics
-For this project we only use IPv4, so i won't talk about IPv6.<br>
+For this project we only use IPv4, so I won't talk about IPv6.<br>
 An IPv4-adress is a 32-bit number divided into 4 "blocks", each 8 bits.<br>
 i.e.:<br>
 `192.168.100.1` turns into `11000000.10101000.01100100.00000001`<br>
@@ -39,7 +39,7 @@ So the min. value of one "block" is `0` and the max. value is `255`.<br>
 The same logic applies to the network-mask:<br>
 `255.255.255.0` turns into `11111111.11111111.11111111.00000000`<br>
 Special to the mask is, after one bit was `0` there can't be any `1` bit's anymore.<br>
-so the only available numbers are:
+So the only available numbers are:
 
 
 - `255 (binary: 11111111)`
@@ -80,14 +80,14 @@ There is some more special ip-ranges, but for this project, you only need to rem
 ## Masks
 
 The network-mask, subnet-mask or in our project only called mask is there to decide which range of ip-adresses are part of the same subnet.<br>
-There is 2 different ways of writing the mask:
+There are 2 different ways of writing the mask:
 
 - "Dot-decimal notation": `255.255.255.0`
 - "Class Inter-Domain Routing" or "CIDR": `/24`
 
 
 The more usable ip-addresses you need in one subnet, the less subnets you will be able to create.<br>
-To help you understanding it, i found this table very helpfull:
+To help you understanding it, I found this table very helpful:
 
 
 | CIDR | Dot-decimal | Number of IP-addresses<br /> per subnet | Usable IP-addresses <br /> per subnet | Number of subnets |
@@ -115,14 +115,14 @@ usable IP's: `190.3.2.253`, `190.3.2.254`
 ## Switches
 
 A switch will enable you to connect more than two devices to the same network.<br>
-It's only purpose is to distribute packages to its network.<br>
+Its only purpose is to distribute packages to its network.<br>
 To see a working example, you can take a look at [Level 3](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_3.png).<br>
 
 ## Routers
 
-As previously mentioned a router is a interface which enables communication between different networks.<br>
+As previously mentioned a router is an interface which enables communication between different networks.<br>
 A router has the ability to be part of multiple networks, in Netpractice this is visualized by the so called `Interface`.<br>
-If routers and switches are still magic to you, i suggest looking deeper [into it](https://www.youtube.com/watch?v=Vc16CCAAz7Q) yourself, as their basic understanding is crucial to succeed in this project.
+If routers and switches are still magic to you, I suggest looking deeper [into it](https://www.youtube.com/watch?v=Vc16CCAAz7Q) yourself, as their basic understanding is crucial to succeed in this project.
 
 
 [back to contents](https://github.com/tblaase/Net_Practice#contents)
@@ -145,12 +145,12 @@ The **next hop** is the address of the next router that you need to send the pac
 
 And now to connect all of the above mentioned topics.<br>
 In order to have a functioning network, you now need to apply all of the parts talked about earlier.<br>
-If there should be a working connection in a network, the devices somehow need to be connected, either directly or by the help of routers which are part of both networks.
+If there should be a working connection in a network, the devices somehow need to be connected, either directly or with the help of routers which are part of both networks.
 
 
-Now you may ask, how do i know if two devices are part of the same network?<br>
+Now you may ask, how do I know if two devices are part of the same network?<br>
 For this you need to combine the IP-address and the mask of the devices in order to get the network-adress, that device is part of.<br>
-By combining i mean, doing a bit-by-bit-AND-opperation.<br>
+By combining I mean, doing a bit-by-bit-AND-opperation.<br>
 For that we first need to translate the IP and the mask to binary.<br>
 i.e.:<br>
 IP: `192.168.100.1` in binary: `11000000.10101000.1100100.00000001`<br>
@@ -166,7 +166,7 @@ If two devices share the same network-address, they are part of the same network
 
 ## Levels
 
-Here are all the solutions and explanations to all 10 Levels.<br>
+Here are all the solutions and explanations for all 10 Levels.<br>
 
 ---
 
@@ -179,7 +179,7 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   Here we have two separate networks, each consisting of two computers.<br>
   In order to make it work, the two computers need to be part of the same network.<br>
   Because the mask of A and B is `255.255.255.0` the possible IP-adresses of A1 are <br>`104.99.23.1 - 104.99.23.254`.<br>
-  For C and D the mask is `255.255.0.0`, so the usable IP's are `211.191.0.1 - 211.191.255.254`
+  For C and D the mask is `255.255.0.0`, so the usable IPs are `211.191.0.1 - 211.191.255.254`
 
 
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
@@ -199,8 +199,8 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   The available IP-addresses for A1 are `192.168.57.193 - 192.168.57.221`.<br>
 
 
-  Network C and D already has the same mask. so they just need addresses that are part of the same subnet.<br>
-  In the case of the mask beeing `/30` the subnet only consists of 2 available addresses per subnet. So be carefull, to choose the correct ones. to make things easier, i suggest you either start with the lowest or highest subnet.<br>
+  Network C and D already have the same mask. so they just need addresses that are part of the same subnet.<br>
+  In the case of the mask being `/30` the subnet only consists of 2 available addresses per subnet. So be careful, to choose the correct ones. to make things easier, I suggest you either start with the lowest or highest subnet.<br>
   I choose the highest, so my available IP-range is `192.168.57.253 - 192.168.57.254`
 
 
@@ -237,7 +237,7 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   A has a fixed IP, so this will define the IP of our network.<br>
   You can freely choose a fitting mask for the network, but the subnet has to have at least 3 usable IP-addresses, <br> so choosing `255.255.255.240`/`/28` will create a subnet of 14 usable addresses.<br>
   The fixed IP of A is `67.52.110.132`.<br>
-  This results in a available IP-range of `67.52.110.129 - 67.52.110.142`.
+  This results in an available IP-range of `67.52.110.129 - 67.52.110.142`.
 
 
   [back to contents](https://github.com/tblaase/Net_Practice#contents)
@@ -275,10 +275,10 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
   ![Level 6](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_6.png)<br>
   This level introduces us to the Internet.<br>
-  We again start with looking at the fixed IP-addresses and masks.
+  We again start by looking at the fixed IP-addresses and masks.
 
 
-  IP of A1 is fixed and mask of R1, which A1 is connected to through the switch, is fixed as well.<br>
+  IP of A1 is fixed and the mask of R1, which A1 is connected to through the switch, is fixed as well.<br>
   So we need to match those in order for them to be in the same network.<br>
   Mask for this network will be `255.255.255.128` which then will result in 2 subnets.<br>
   Combined with the fixed IP of `29.65.6.227` one subnet will be from `29.65.6.1` to `29.65.6.126` and the other <br>`29.65.6.129 - 29.65.6.254`.<br>
@@ -307,11 +307,11 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   <summary>show</summary>
 
   ![Level 7](https://github.com/tblaase/Net_Practice/blob/main/my_solutions/Level_7.png)<br>
-  Level 7 is pretty straight forward and not too complicated, you just need to make sure that no networks overlap with each other.
+  Level 7 is pretty straightforward and not too complicated, you just need to make sure that no networks overlap with each other.
 
 
-  First goal will be to find an appropriate mask to use.<br>
-  Since we will need 3 different subnets, by looking into the [table](https://github.com/tblaase/Net_Practice#masks) you will be able to decide which mask will be required.<br>
+  The first goal will be to find an appropriate mask to use.<br>
+  Since we will need 3 different subnets, by looking at the [table](https://github.com/tblaase/Net_Practice#masks) you will be able to decide which mask will be required.<br>
   I did choose `255.255.255.252` or in CIDR `/30` as my mask because it provides me with subnets, each having 2 usable IP-addresses.<br>
   Now you just need to fill in all the correct IP's in order to create the 3 networks:
 
@@ -336,7 +336,7 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   Level 8 now will be a little tricky because you really need to be aware of overlapping networks.
 
 
-  First thing we can solve is the connection of R13 and R21.<br>
+  The first thing we can solve is the connection between R13 and R21.<br>
   The routing table of R2 gives you the fixed IP of R13 as `141.195.172.62` and as this network only consists of 2 needed IP-addresses we can set the mask of R13 and R21 to `255.255.255.252` in order to make things easier with overlapping IP-addresses.<br>
   Then this will result in `141.195.172.61` as the address of R21.<br>
 
@@ -351,14 +351,14 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
 
   For the network between R22 and C1 we are free to choose any mask we want. In order to make it as easy as possible I set it to `255.255.255.252`, because I only need 2 usable IP-addresses. After that I then choose a free range for my IP's.<br>
-  In this case I did chose the next free one after the network of R23 and D1, which will be `141.195.172.17 - 141.195.172.18`.<br>
+  In this case I did choose the next free one after the network of R23 and D1, which will be `141.195.172.17 - 141.195.172.18`.<br>
 
 
   Last thing to do is to set all the routing tables accordingly.<br>
   For C and D it's easy, both use `default` or `0.0.0.0/0` as a **destination** and the IP of the Interface of R2 they are directly connected to as **next hop**.<br>
 
   For the routing table of R1 it is a little harder.<br>
-  Even though it would, for Net_Practice, work to just set the **destination** to `default` and get away with it just working, there is no way this should work as easy as this.<br>
+  Even though it would, for Net_Practice, work to just set the **destination** to `default` and get away with it just working, there is no way this should work as easily as this.<br>
   Because that would result in the routing table having 2 default destinations which lead to a different **next hop**, which if you think about doesn't make any sense, because the router would have no way of knowing which default to use.
 
 
@@ -383,7 +383,7 @@ Here are all the solutions and explanations to all 10 Levels.<br>
 
 
   First we set the ,mask of R22 and C1 to `255.255.255.252`, in order to block as little IP's as possible.<br>
-  Now you have to decide on which IP-range to use for this network. I decided for the top-end, with the usable IP-addresses beeing `10.0.0.253` and `10.0.0.254`.<br>
+  Now you have to decide on which IP-range to use for this network. I decided on the top-end, with the usable IP-addresses beeing `10.0.0.253` and `10.0.0.254`.<br>
   Now set the **next hop** in the routing table of C to the IP of R22.<br>
   Now change the routing table of R1, R2 and the Internet to make it work, as you learned before.
 
@@ -450,7 +450,7 @@ Here are all the solutions and explanations to all 10 Levels.<br>
   - `63.239.192.0 - 63.239.255.255`
 
 
-Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address is `63.239.64.0`, combine this with our mask of `/18` and you have the missing **destinaton** of our routing table, `63.239.64.0/18`.
+Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address is `63.239.64.0`, combine this with our mask of `/18` and you have the missing **destination** of our routing table, `63.239.64.0/18`.
 
 
 [back to contents](https://github.com/tblaase/Net_Practice#contents)

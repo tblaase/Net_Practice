@@ -495,7 +495,7 @@ Our fixed IP is part of `63.239.64.0 - 63.239.127.255`, so the network-address i
   Set the addresses accordingly to the usable ones of the range, you decided on.<br>
 
 
-  Lastly, for the routing table of R1 we need the network-address of the R22-H31 network, which in my case is `150.152.40.192/` and it's mask, which is `/30`, set the **destination** accordingly.<br>
+  Lastly, for the routing table of R1 we need the network-address of the R22-H31 network, which in my case is `150.152.40.192/` and it's mask, which is `/30`, set the **destination** accordingly.<be> <br> <br>
 
 </details>
 
